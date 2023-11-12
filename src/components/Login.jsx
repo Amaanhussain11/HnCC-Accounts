@@ -69,9 +69,9 @@ const Login = () => {
             </form>
           </div>
           <div className="w-full h-20  ">
-            <button className="w-full bg-black text-white text-2xl p-2 rounded-3xl mt-3">
+            <Link to="/Welcome_back"><button className="w-full bg-black text-white text-2xl p-2 rounded-3xl mt-3">
               Log in
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>

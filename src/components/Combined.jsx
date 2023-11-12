@@ -5,6 +5,7 @@ import About from "./About";
 import OverviewAndSteps from "./OverviewAndSteps";
 import FooterHero from "./FooterHero";
 import Alumni from "./Alumni";
+import Footer from "./Footer";
 
 const Combined = () => {
   return (
@@ -15,6 +16,7 @@ const Combined = () => {
       <OverviewAndSteps />
       <Alumni />
       <FooterHero />
+      <Footer />
     </>
   );
 };
