@@ -22,6 +22,17 @@ app.secret_key = "Secret"
 @app.route('/', methods = ['POST', 'GET'])
 
 def index():
+  if request.method == 'POST':
+    email = request.form.get('email')
+    password = request.form.get('Password')
+    
+    try:
+      user = auth.sign_in_with_email_and_password(email, password)
+      session['user'] = email
+      
+    except:
+      return "Failed to Login"
+    
     return render_template('index.html')
 
 @app.route('/logout')
