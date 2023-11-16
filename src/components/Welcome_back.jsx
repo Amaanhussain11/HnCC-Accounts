@@ -7,6 +7,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 const Welcome_back = () => {
   return (
     <>
@@ -52,63 +53,7 @@ const Welcome_back = () => {
             </div>
           </div>
         </div>
-        <div className="footer h-64 mt-2  flex bg-black justify-between flex-col items-center">
-          <div className="footnav h-11 w-full border-2 border-black flex flex-row justify-center items-center bg-[#091242]">
-            <span className="p-12 text-white ">
-              <button className="bg-black h-fit w-fit p-2 px-4">Home</button>
-            </span>
-            <span className="p-12 text-white ">
-              <button className=" h-fit w-fit p-2 px-4">About Us</button>
-            </span>
-          </div>
-          <div className="footbody h-40 w-full  bg-black flex justify-center items-center flex-row">
-            <div className="firsthalf flex  justify-around items-center w-[50%] border- text-white h-full">
-              <div className="">
-                <ul>
-                  <li>Meet</li>
-                  <li>BIT SINDRI</li>
-                  <li>Dhanbad-828123 JHARKHAND</li>
-                  <li>India</li>
-                </ul>
-              </div>
-
-              <div>
-                <ul>
-                  <li className="py-3 hover:underline">
-                    <button>Terms</button>
-                  </li>
-                  <li className="hover:underline text-white">
-                    <button>Privacy</button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="secondhalf flex justify-center flex-col items-end w-[50%]  text-white h-full">
-              <div className="icons  h-10 w-fit mx-10 flex justify-center items-center ">
-                <button>
-                  <FontAwesomeIcon icon={faLinkedin} size="2xl" />
-                </button>
-                <button className="px-7">
-                  <FontAwesomeIcon icon={faTwitter} size="2xl" />
-                </button>
-                <button>
-                  <FontAwesomeIcon icon={faFacebook} size="2xl" />
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="footfoot bg-black  text-white h-12 w-full  flex justify-around items-center">
-            <span> Copyright @demo | Designed by xyz - Powered by XYZ.</span>
-            <span>
-              <ul className="flex flex-row">
-                <li className="px-3"><button>Styel Guide</button></li>
-                <li className="px-3"><button>Licenses</button></li>
-                <li className="px-3"><button>Changelog</button></li>
-                <li className="px-3"><button>Password</button></li>
-              </ul>
-            </span>
-          </div>
-        </div>
+        <Footer />
       </div>
     </>
   );

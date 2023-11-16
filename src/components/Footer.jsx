@@ -1,13 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <>
       <div className="footer">
-        <div className="footer-navbar bg-[#091242] flex justify-center">
+        <div className="footer-navbar bg-[#091242] flex justify-center border-t border-slate-500">
           <div className="nav-buttons">
-            <Buttons title="Home" />
-            <Buttons title="About Us" />
+            <Link to={"/combined#header"}>
+              <Buttons title="Home" />
+            </Link>
+            <Link to={"/combined#about"}>
+              <Buttons title="About Us" />
+            </Link>
           </div>
         </div>
         <div className="footer-content bg-black">
@@ -31,14 +36,20 @@ const Footer = () => {
               </div>
             </div>
             <div className="socials text-4xl flex justify-between w-[15%]">
-              <button className="bg-gradient-to-r from-amber-400 via-amber-300 to-orange-200 text-transparent bg-clip-text">
-                <i className="bi bi-linkedin"></i>
+              <button className="bg-gradient-to-r from-amber-400 cursor-default via-amber-300 to-orange-200 text-transparent bg-clip-text">
+                <a href="https://www.linkedin.com/company/hnccbits/">
+                  <i className="bi bi-linkedin cursor-pointer"></i>
+                </a>
               </button>
-              <button className="bg-gradient-to-r from-amber-400 via-amber-300 to-orange-200 text-transparent bg-clip-text">
-                <i className="bi bi-twitter-x"></i>
+              <button className="bg-gradient-to-r from-amber-400 cursor-default via-amber-300 to-orange-200 text-transparent bg-clip-text">
+                <a href="https://twitter.com/hnccbits?lang=en" target="_blank">
+                  <i className="bi bi-twitter-x cursor-pointer"></i>
+                </a>
               </button>
-              <button className="bg-gradient-to-r from-amber-400 via-amber-300 to-orange-200 text-transparent bg-clip-text">
-                <i className="bi bi-facebook"></i>
+              <button className="bg-gradient-to-r from-amber-400 cursor-default via-amber-300 to-orange-200 text-transparent bg-clip-text">
+                <a href="https://www.facebook.com/hnccbits/" target="_blank">
+                  <i className="bi bi-facebook cursor-pointer"></i>
+                </a>
               </button>
             </div>
           </div>

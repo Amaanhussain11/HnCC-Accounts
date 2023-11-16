@@ -1,14 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Benefit from "./sub-components/Benefit";
 import SubHeading from "./sub-components/SubHeading";
-
 
 const About = () => {
   return (
     <>
-      <div className="about-container w-full py-4 px-20">
-        <SubHeading title={"About Us"}
-         />
+      <div className="about-container w-full py-4 px-20" id="about">
+        <SubHeading title={"About Us"} />
         <div className="content py-10 px-20 border-y-2 flex flex-row border-slate-200">
           <div className="about-img relative w-1/2 border-r-2 border-slate-200">
             <img
@@ -44,7 +42,6 @@ const About = () => {
     </>
   );
 };
-
 
 export default About;
 /* bi bi-person-fill */
